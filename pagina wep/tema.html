@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="diseno.css">
+    <style>
+         h1 {color: brown;
+        text-decoration: underline;
+        width: 60;
+        margin: 60;
+        text-align: center;
+        border-radius: 30%;
+        border: 1px;
+        }
+        div {
+            width: 100px;
+            padding: 10px;
+            border: 5px blue solid;
+            text-align: center;
+            
+
+        }
+        
+        
+        dt {color: rgb(54, 42, 165);
+        text-decoration: underline;
+        width: 100px;
+        padding: 10px;
+        margin: 60px;
+        border: 4px cornflowerblue solid;
+        text-align: center;
+        }
+        a{color: rgb(54, 42, 165);
+        text-decoration: underline;
+        width: 100px;
+        padding: 10px;
+        margin: 60px;
+        border: 4px cornflowerblue solid;
+        box-shadow:0 3px 3px 0 blue ;
+        text-align: center;
+        border-radius: 10%;
+        }
+        section{
+            background-color: rgb(80, 176, 255);
+            width: auto;
+            height: auto;
+            border: 4px rgb(100, 121, 237) solid;
+            border-radius: 10%;
+        }
+        h1:hover{
+            transform: scale(1.15);
+        }
+        dt:hover{
+            transform: scale(1.15);
+        }
+        section:hover{
+            transform: scale(1.05);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>HTML, Navegadore</h1>
+    <dl>
+        <dt>SpckEditor</dt>
+        <section>
+        <dd> Para sistemas operativos android se recomienda el uso de SpckEditor lo cual puede usarse 
+            varios lenguajes de codigo como el lenguaje de etiquetado HTML.
+        </dd>
+        </section>
+        <dt>Visual Studio code </dt>
+        <section>
+        <dd> Para el sistema de conputer personal o abrebiado pc es recomendado utilisar la mejor aplicacion
+            para programcion ya que te permite utilisar varias extenciones como por ejemplo:
+            Renpy(novels visual) y su aplicaion para crear datos.
+        </dd>
+        </section>    
+        <dt>HTML</dt>
+        <dt> (Lenguaje de marcado de Hipertexto)</dt> 
+        <section>
+        <dd>es un lenguae muy utilisado para crear paginas wep y consiste
+            en un conjunto  de etiquetas que se utilisa para definir la estructura de un contenido de la pagina,
+            estas etiquetas marcan un inicio y un finalen en los elementos que contiene una pagina wep como:
+            Encabezados, Parafos, Imagenes, Enlases,etc. </dd>
+            <pre><code>
+                &lt;Apertura&gt;&lt;/cierre&gt;
+                </code>
+            </pre>
+            </section>
+            <dt>Estructura Basica del Html</dt>
+            <section>
+            <dd>
+            La estructura basica del html consta de una serie de Elementos anidados se abre con la etiqueta "html"
+            lo cual contiene dos elementos principales: encavesado "head" el cuerpo "body".Ejemplo:
+            <pre><code>
+            &lt;html&gt;
+                &lt;head&gt;
+                &gt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Ejemplo de titulo&lt;/h1&gt;
+                    &lt;p&gt;Ejemplo de parafo&lt;/p&gt;
+            &gt;/body&gt;
+            &gt;/html&gt;
+            </code></pre>
+            </section>
+            <dt>Etiquetas Basicas del Html</dt>
+            <section>
+            <dd>
+            Las Etiquetas o elementos que representa una asociacion especifica para que sea interpretado por el Navegador
+            algunos ejemplos som:
+            <ul>
+            <li>
+                &lt;h1&gt;&lt;h2&gt;&lt;h3&gt;&lt;h4&gt;&lt;h5&gt;&lt;h6&gt;-permite jerarquizar los contenido, son los
+                se conoce como titulos, la espesificacion puede ser de diferente tamaño y nveles.
+            </li>
+            <li>
+                &lt;p&gt;-Es una eiqueta de contenido, se utilisa para crear parafos de texto.
+            </li>
+            <li>
+                &lt;br&gt;-Implemeta un salto de linea dentro del texto asiendo la funcion de la tecla "Enter"del
+                teclado.
+            </li>
+            </ul>
+            </section>
+            <dt>Etiquetas de estilos</dt>
+            <section>
+            <li>
+                &lt;em&gt;-Marcado con enfasis la parte de un texto seleccionado.
+            </li>    
+            <li>
+                &lt;strong&gt;-Resalta el contenido de un texto en "negrita".
+            </li>
+            <li>
+                &lt;code&gt;-Implementa insertar texto que representa un codigo de conputadora, que permite mostrar
+                funciones codigos de prgramacion o variables.
+            </li>
+            </section>
+            <dt>Etiquetas de creacion de listas</dt>
+            <section>
+            <li>
+                &lt;ul&gt; Lista no Ordenada-(Under list) Esta etiqueta representa una lista descriptiva.
+            </li>
+            <li>
+                &lt;lo&gt; litas Ordenadas-(Ordered list) Esta etiqueta representa una lista ordenada.
+            </li>
+            <li>
+                &lt;li&gt;-(list Itens) se usa para espesificar los Itens de la lista ya sea en "ul" o "ol".Ejemplo:
+            </li>
+            &lt;ul&gt;<br>
+                &lt;li&gt; Oruro&lt;/li&gt;<br>
+                &lt;li&gt;Santa Cruz&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;ol&gt;<br>
+                &lt;li&gt;Ejemplo 1&lt;/li&gt;<br>
+                &lt;li&gt;Ejemplo 2&lt;/li&gt;<br>
+            &lt;/ol&gt;<br>
+            </section>
+            <dt>Lista de definiciones</dt>
+            <section>
+            <li>
+                &lt;dl&gt; Lista de definiciones: Esta etiqueta representa una lista descriptiva.
+            </li>
+            <li>
+                &lt;dt&gt;- Especifica un termino en una descripcion o lista de definiciones.
+            </li>
+            <li>
+                &lt;dd&gt;- Provee detalles o el significado de la definicion de un termino.Ejemplos:
+            </li>
+            &lt;dl&gt; <br>
+                &lt;dt&gt;Jugar&lt;/dt&gt;<br>
+                &lt;dd&gt;Acion o efecto de aser algo&lt;/dd&gt; <br>
+            </section> 
+            <dt>Etiquetas para insertar imagenes y video </dt>
+            <section>
+            <li>
+                &lt;img&gt;- Esta etiqueta permite insertar imagenes en una pagina wep introduciendo 
+                algunos parametros.
+            </li>
+                "src"- Esta propiedad se usa para espesificar la ruta de la imagen cuando no se puede mostrar por
+                algun motivo.br
+                "alt"- Esta propiedad se utilisa para agregar un testo alternativo para la imagen cuano no se pueda
+                mostrar. <br>
+                "width" y "height"- Esta propiedad especifica el ancho y el alto de un elemto repectivamente en 
+                pixeles.
+            <li>
+                &lt;video&gt;-Se utilisa para insertar el videos en una pagina wep como el boton de reproduccion y de 
+                pausa.
+            </li>
+                "controls"- Se utilisa para mostrar los controles de reproductor de video en la pagina wep como el botom
+                de reproduccion pausa o volumen.Ejemplo: <br>
+            &lt;img src="ruta/nombre de la imagen"width="valor px" alt="texto alternativo"&gt;
+            &lt;/img&gt; <br>
+            &lt;video src="ruta/nombre del video" controls heigh="valor px"&gt;
+            &lt;/video&gt;
+            </section>
+            <dt>Etiquetas de estructuracion</dt>
+            <section>
+            <li>
+                &lt;div&gt;- Se usa para dividir el contenido de una pagina wep en secciones y no tienes ningun significado
+                semantico o en si mismo pero puede ser usada para agrupar y ordenar otros elementos usando la propiedad.
+            </li>
+            "id"- Es el que define un identificador unico el cual no debe repetirse en todo el documento.Ejemplo <br>
+            &lt;div id="ejemplo de identificador&gt;<br>
+                &lt;h2&gt;"ejemplo"&lt;/he&gt;<br>
+                &lt;p&gt;"ejemplo 1"&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            </section>
+    </dl>
+    <a href="portada 1.html">Volver Atras</a>
+
+</body>
+</html>

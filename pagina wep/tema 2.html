@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="diseño2.css">
+    <style>
+        h1 {color: brown;
+        text-decoration: underline;
+        width: 60;
+        margin: 60;
+        border-radius: 30%;
+        
+        }
+        div {
+            width: 100px;
+            padding: 10px;
+            border: 5px blue solid;
+            text-align: center;
+            
+
+        }
+        
+        
+        dt {color: rgb(54, 42, 165);
+        text-decoration: underline;
+        width: 100px;
+        padding: 10px;
+        margin: 60px;
+        border: 4px cornflowerblue solid;
+        box-shadow:0 3px 3px 0 blue ;
+        text-align: center;
+        border-radius: 30%;
+        }
+
+        a{color: rgb(54, 42, 165);
+        text-decoration: underline;
+        width: 100px;
+        padding: 10px;
+        margin: 60px;
+        border: 4px cornflowerblue solid;
+        box-shadow:0 3px 3px 0 blue ;
+        text-align: center;
+        border-radius: 10%;
+        }
+        section{
+            background-color: rgb(80, 176, 255);
+            width: auto;
+            height: auto;
+            border: 4px rgb(100, 121, 237) solid;
+            border-radius: 10%;
+
+
+        }
+        h1:hover{
+            transform: scale(1.15);
+        }
+        dt:hover{
+            transform: scale(1.15);
+        }
+        a:hover{
+            transform: scale(1.15); 
+        }
+        section:hover{
+            transform: scale(1.02);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1> css </h1>
+    </div>
+    <dl>
+        <dt>CSS o "hojas de estilo en cascada</dt>
+        <section>
+        <dd> un lenguaje de estilo que se utilisa para dar formato y estilos en los documentos en html, permite controlar
+        la presentacion visual de los elementos como el color, tipografia, el tamaño y la posicion.
+        </dd>
+        </section>
+        <dt>¿Como se crea?</dt>
+        <section>
+        <dd>
+            Exisisten tres formas para poder crear estilos en un documento "html" los cuales som: <br>
+            1. En la propia etiqueta. <br>
+            2: En el "head" de pagina wep. <br>
+            3.En el archivo Externo. <br>
+        </dd>
+        </section>
+        <dt>1. En en head de la pagina</dt>
+        <section>
+        <dd>
+            se crea utilisando la etiqueta &lt;style&gt; la cual indica la informacion de stylo que se quiere agregar, el
+            cual debe ir dentro de la etiqueta basica &lt;head&gt; del mismo documento HTML.Ejemplo:
+            &lt;head&gt; <br>
+                &lt;style&gt; <br>
+                h1 { <br>
+                    color "valor" <br>
+                    border "valor" <br>
+                } <br>
+                &lt;/style&gt; <br>
+                &lt;/head&gt; <br>
+        </dd>
+        </section>
+        <dt>2. En un mismo archivo externo</dt>
+        <section>
+        <dd>
+            Se cre usando la etiqueta &lt;link&gt; que espesifica la relacion entre documentos actual y de un recurso
+            externo seguido de las propiedades "href" y "rel" las cuales permite cipar o especificar el enlace a una 
+            hoja externa las cuales deben ir dentro de la etiqueta &lt;head&gt; del mismo documento HTML.Ejemplo:
+            &lt;head&gt; <br>
+            &lt;link href="nombre de archivo css"ref="style"&gt; <br>
+            &lt;/head&gt; <br>
+        </dd>
+        </section>
+        <dt>¿Como se usa?</dt>
+        <section>
+        <dd>
+            Para aplicar un estilo se debe aplicar en el siguiemte orden.
+        </dd>
+        </section>
+        <dt> SELECTOR "{"</dt>
+        <section>
+            <dd>
+            propiedad "valor"
+        }
+        </dd>
+        </section>
+        <dt>selector</dt>
+        <section>
+        <dd>
+            Un selector es un patron utlilsando para selecionar y aplicar estilos a un comjunto de elementos HTML,
+            hay varios tipos de selectores en css entre ellos som:
+
+        </dd>
+        </section>
+        <dt>Selector de tipo</dt>
+        <section>
+        <dd>
+            Selecciona todos los elementos que coinciden con el nombre del elemento especificado. <br>
+            Sintaxis: eltname <br>
+            Ejemplo: input se aplicará a cualquier elemento &lt;input&gt;
+        </dd>
+        </section>
+        <dt> Selector de clase</dt>
+        <section>
+        <dd>
+            Selecciona todos los elementos que tienen el atributo de class especificado. <br>
+            Sintaxis: .classname <br>
+            Ejemplo: .index seleccionará cualquier elemento que tenga la clase "index". <br>
+        </dd>
+        </section>
+        <dt>Selector universal</dt>
+        <section>
+        <dd>
+            Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres. <br>
+            Sintaxis: * ns|* *|* <br>
+            Ejemplo: * se aplicará a todos los elementos del documento.
+        </dd>
+        </section>
+        <dt>Selector de atributo</dt>
+        <section>
+        <dd>
+            Selecciona elementos basándose en el valor de un determinado atributo. <br>
+            Sintaxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value] <br>
+            Ejemplo: [autoplay] seleccionará todos los elementos que tengan el atributo "autoplay" establecido (a cualquier valor).
+        </dd>
+        </section>
+        <dt>Combinadores</dt>
+        <section>
+        <dd>
+            El combinador + selecciona hermanos adyacentes. Esto quiere decir que el segundo elemento sigue directamente al primero y ambos comparten el mismo elemento padre. <br>
+            Sintaxis: A + B <br>
+            Ejemplo: La regla h2 + p se aplicará a todos los elementos p que siguen directamente a un elemento h2(en-US).
+        </dd>
+        </section>
+        <dt>Combinador general de hermanos</dt>
+        <section>
+        <dd>
+            El combinador ~ selecciona hermanos. Esto quiere decir que el segundo elemento sigue al primero (no necesariamente de forma inmediata) y ambos comparten el mismo elemento padre. <br>
+            Sintaxis: A ~ B <br>
+            Ejemplo: La regla p ~ span se aplicará a todos los elementos span que siguen un elemento p.
+        </dd>
+        </section>
+        <dt>Combinador de hijo</dt>
+        <section>
+        <dd>
+            El combinador > selecciona los elementos que son hijos directos del primer elemento. <br>
+            Sintaxis: A > B <br>
+            Ejemplo: La regla ul > li se aplicará a todos los elementos li que son hijos directos de un elemento ul.
+        </dd>
+        </section>
+        <dt>Combinador de descendientes</dt>
+        <section>
+        <dd>
+            El combinador (espacio) selecciona los elementos que son descendientes del primer elemento. <br>
+            Sintaxis: A B <br>
+            Ejemplo: La regla div span se aplicará a todos los elementos span que están dentro de un elemento div.br
+        </dd>
+        </section>
+        <dt>Combinador de column (en-US)a Experimental</dt>
+        <section>
+        <dd>
+            El combinador || selecciona los elementos especificados pertenecientes a una columna. <br>
+            Sintaxis: A || B <br>
+            Ejemplo: col || td seleccionará todos los elementos td que pertenezcan al ámbito de col. <br>
+        </dd>
+        </section>
+        <dt>Pseudoclases</dt>
+        <section>
+        <dd>
+            Las pseudoclases permiten la selección de elementos, basada en información de estado que no está contenida en el árbol de documentos. <br>
+            Ejemplo: La regla a:visited se aplicará a todos los elementos a que hayan sido visitados por el usuario.
+        </dd>
+        </section>
+        <dt>Pseudoelementos</dt>
+        <section>
+        <dd>
+            Los pseudoelementos son abstracciones del árbol que representan entidades más allá de los elementos HTML. Por ejemplo, HTML no tiene
+            un elemento que describa la primera letra de un párrafo ni los marcadores de una lista. Los pseudoelementos representan estas entidades
+            y nos permiten asignarles reglas CSS. De este modo podemos diseñar estas entidades de forma independiente. <br>
+            Ejemplo: La regla p::first-line se aplicará a la primera línea de texto de todos los elementos p.
+        </dd>
+        </section>
+    
+        </dl>
+    <br>
+    <a href="portada 1.html">Volver Atras</a>
+    
+</body>
+</html>
